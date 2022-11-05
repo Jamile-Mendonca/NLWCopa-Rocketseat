@@ -13,6 +13,7 @@ ul {
   --card-color-primary: #f7dd43;
   --card-bg-color: #1d1c19;
   --card-bg: url(./assets/bg-yellow.svg);
+  --card-ul-li-li: #323238;
 }
 
 body.blue {
@@ -34,6 +35,7 @@ body.pink {
   --card-color-primary: #ff1493;
   --card-bg-color: #381638;
   --card-bg: url(./assets/bg-pink.svg);
+  --card-ul-li-li: #db7093;
 }
 
 body {
@@ -71,7 +73,7 @@ header {
   padding: 32px 23px;
   text-align: center;
   background: var(--card-bg-color);
-  border-bottom: 2px solid var(--card-color-primary);
+  border-bottom: 5px solid var(--card-color-primary);
   border-radius: 6px;
 }
 
@@ -115,7 +117,7 @@ header {
 
 .card ul li+li {
   padding-top: 24px;
-  border-top: 1px solid #323238;
+  border-top: 1px solid var(--card-ul-li-li);
 }
 
 .card ul li strong {
@@ -155,7 +157,7 @@ header {
 
 @media (min-width: 700px) {
   #cards {
-    max-width: 670px;
+    /*max-width: 670px;*/
     flex-direction: row;
     flex-wrap: wrap;
   }
